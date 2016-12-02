@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+        <array key="Slabo13px-Regular.ttf">
+            <string>Slabo13px-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ForecastColumnView" customModule="ComfyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="161"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;TIME&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grJ-vd-o8A" userLabel="Period Label">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5DS-gS-cKX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4J-gz-o7q" userLabel="Horizontal Divider">
+                    <color key="backgroundColor" red="0.60392156862745094" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tRr-2a-R6V"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="99º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-P0-7PL" userLabel="Temperature Label">
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="52"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rF-0h-SyR" userLabel="Metadata Label">
+                    <string key="text">Feels like 99º
+Wind: N 5mph
+Humidity: 99%</string>
+                    <fontDescription key="fontDescription" name="Slabo13px-Regular" family="Slabo 13px" pointSize="12"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6rF-0h-SyR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Yh-fE-y0f"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6rF-0h-SyR" secondAttribute="bottom" id="5Hw-7x-rgs"/>
+                <constraint firstItem="grJ-vd-o8A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7SK-un-Km7"/>
+                <constraint firstItem="nSF-P0-7PL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="88v-LD-i7B"/>
+                <constraint firstAttribute="trailing" secondItem="T4J-gz-o7q" secondAttribute="trailing" id="Ixm-gc-Uos"/>
+                <constraint firstItem="nSF-P0-7PL" firstAttribute="top" secondItem="T4J-gz-o7q" secondAttribute="bottom" constant="10" id="JwS-C1-rdv"/>
+                <constraint firstItem="grJ-vd-o8A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xqy-cg-QNb"/>
+                <constraint firstItem="T4J-gz-o7q" firstAttribute="top" secondItem="grJ-vd-o8A" secondAttribute="bottom" constant="10" id="bbL-jm-jmw"/>
+                <constraint firstItem="T4J-gz-o7q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cCk-eB-zAV"/>
+                <constraint firstAttribute="trailing" secondItem="grJ-vd-o8A" secondAttribute="trailing" id="eB6-qn-wED"/>
+                <constraint firstAttribute="trailing" secondItem="nSF-P0-7PL" secondAttribute="trailing" id="oAg-o4-tyy"/>
+                <constraint firstItem="6rF-0h-SyR" firstAttribute="top" secondItem="nSF-P0-7PL" secondAttribute="bottom" constant="10" id="qtj-Eh-We3"/>
+                <constraint firstAttribute="trailing" secondItem="6rF-0h-SyR" secondAttribute="trailing" id="uhX-eP-kZU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="metadataLabel" destination="6rF-0h-SyR" id="xgu-FU-anq"/>
+                <outlet property="periodLabel" destination="grJ-vd-o8A" id="pC6-69-RGq"/>
+                <outlet property="temperatureLabel" destination="nSF-P0-7PL" id="yxs-tT-9Wv"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="66.5"/>
+        </view>
+    </objects>
+</document>

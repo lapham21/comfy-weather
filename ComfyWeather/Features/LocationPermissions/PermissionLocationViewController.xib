@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+        <array key="Slabo13px-Regular.ttf">
+            <string>Slabo13px-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermissionLocationViewController" customModule="ComfyWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="okayButton" destination="ZtH-Av-oFF" id="f2q-f2-bp5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="PermissionLocation" customModule="ComfyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="325"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="cameraPermissionsDenied" translatesAutoresizingMaskIntoConstraints="NO" id="JTn-C5-7Qk">
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="155" id="CDS-BS-brt"/>
+                        <constraint firstAttribute="width" constant="325" id="gcD-ui-oet"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHOOPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTa-jT-Nix">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="3S5-Sj-9mA"/>
+                        <constraint firstAttribute="height" constant="20" id="miC-ud-Zau"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d90-Rw-jpq">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3UQ-ho-eag"/>
+                        <constraint firstAttribute="width" constant="295" id="Mth-cc-BVH"/>
+                    </constraints>
+                    <string key="text">We can't move forward without accessing
+ your location. Please grant permission through your phone's system settings.</string>
+                    <fontDescription key="fontDescription" name="Slabo13px-Regular" family="Slabo 13px" pointSize="13"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEv-yf-Iuw">
+                    <color key="backgroundColor" red="0.60392156860000001" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.60392156860000001" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="2GV-T2-Qmo"/>
+                        <constraint firstAttribute="width" constant="295" id="ugl-Fx-2sG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtH-Av-oFF">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Wel-bf-7Yv"/>
+                        <constraint firstAttribute="width" constant="40" id="vqF-qr-7q1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                    <state key="normal" title="OKAY">
+                        <color key="titleColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="okayButtonPressed:" destination="-1" eventType="touchUpInside" id="xOH-sm-0Jc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d90-Rw-jpq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AES-nY-iCE"/>
+                <constraint firstItem="JTn-C5-7Qk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AgW-Ul-7ZU"/>
+                <constraint firstItem="ZtH-Av-oFF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kl3-iI-8rs"/>
+                <constraint firstItem="JTn-C5-7Qk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Sg1-Ch-PIS"/>
+                <constraint firstItem="IEv-yf-Iuw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aKZ-0V-eg5"/>
+                <constraint firstItem="d90-Rw-jpq" firstAttribute="leading" secondItem="aTa-jT-Nix" secondAttribute="leading" id="dT0-sy-lMr"/>
+                <constraint firstAttribute="bottom" secondItem="ZtH-Av-oFF" secondAttribute="bottom" constant="9" id="hVx-dd-V8X"/>
+                <constraint firstAttribute="bottom" secondItem="IEv-yf-Iuw" secondAttribute="bottom" constant="43" id="hli-6U-eTk"/>
+                <constraint firstAttribute="bottom" secondItem="aTa-jT-Nix" secondAttribute="bottom" constant="135" id="sNE-Oh-jUm"/>
+                <constraint firstAttribute="bottom" secondItem="d90-Rw-jpq" secondAttribute="bottom" constant="60" id="xXg-8O-1v3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="okayButton" destination="ZtH-Av-oFF" id="ewK-Tn-cEA"/>
+                <outlet property="whoopsContentLabel" destination="d90-Rw-jpq" id="Pr5-XG-IPg"/>
+                <outlet property="whoopsLabel" destination="aTa-jT-Nix" id="bUU-Eg-DtX"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cameraPermissionsDenied" width="333" height="163"/>
+    </resources>
+</document>

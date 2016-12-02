@@ -1,0 +1,6 @@
+framework module Pods_ComfyWeather {
+  umbrella header "Pods-ComfyWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}

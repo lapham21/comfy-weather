@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddOutfitHeaderView" customModule="ComfyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-6n-Wmf">
+                    <color key="backgroundColor" red="0.93415319919999995" green="0.89341431859999998" blue="0.92618763449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ADD PHOTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vh-RW-gjq" userLabel="Add Photo Label">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="3aU-Z2-AhD"/>
+                        <constraint firstAttribute="height" constant="17" id="Eyy-q0-U5t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zne-dD-mZS">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zne-dD-mZS" secondAttribute="height" multiplier="202:172" id="adA-C8-wqR"/>
+                        <constraint firstAttribute="height" priority="150" constant="120" id="lwG-RA-7AA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yp-KN-tS0">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="151" id="GFj-Lt-LY0"/>
+                        <constraint firstAttribute="height" constant="75" id="Ius-Pw-kKD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="75"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.6470588235294118" blue="0.76470588235294112" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0Yp-KN-tS0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="9nB-Jm-Pik"/>
+                <constraint firstItem="Uhr-6n-Wmf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hme-Ml-Mh7"/>
+                <constraint firstItem="9Vh-RW-gjq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KRM-RB-q87"/>
+                <constraint firstItem="0Yp-KN-tS0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="220" id="OvX-NJ-WeY"/>
+                <constraint firstItem="Uhr-6n-Wmf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TK1-MS-sTr"/>
+                <constraint firstItem="9Vh-RW-gjq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tde-tt-tNy"/>
+                <constraint firstItem="Zne-dD-mZS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="141" id="YCY-cT-ClW"/>
+                <constraint firstItem="Zne-dD-mZS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZbR-uy-dy3"/>
+                <constraint firstAttribute="trailing" secondItem="Uhr-6n-Wmf" secondAttribute="trailing" id="b8b-S0-crY"/>
+                <constraint firstAttribute="bottom" secondItem="Uhr-6n-Wmf" secondAttribute="bottom" id="tJ7-Kh-t1E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addPhotoLabel" destination="9Vh-RW-gjq" id="VTh-op-l71"/>
+                <outlet property="imageView" destination="Uhr-6n-Wmf" id="LWw-KE-z22"/>
+                <outlet property="tempLabel" destination="0Yp-KN-tS0" id="fg9-u3-7fG"/>
+                <outlet property="weatherImageView" destination="Zne-dD-mZS" id="3Wt-7H-0vV"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="-442"/>
+        </view>
+    </objects>
+</document>

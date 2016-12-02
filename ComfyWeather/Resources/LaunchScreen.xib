@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="weatherCloudynightWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Nxd-Lz-C3z">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="195" id="9Bn-Lc-MRi"/>
+                        <constraint firstAttribute="width" constant="138.40000000000001" id="xj2-OK-tDd"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" image="weatherCloudynightWhiteCopy" translatesAutoresizingMaskIntoConstraints="NO" id="be4-WY-o5B">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="195" id="Cps-5J-ybf"/>
+                        <constraint firstAttribute="height" constant="195" id="i7G-Qf-f7H"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-Ej-bzc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="WAx-L3-kPA"/>
+                        <constraint firstAttribute="height" constant="78" id="tHe-aP-5yS"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.60392156860000001" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="be4-WY-o5B" secondAttribute="trailing" id="6Ec-Up-hha"/>
+                <constraint firstItem="xIM-Ej-bzc" firstAttribute="top" secondItem="Nxd-Lz-C3z" secondAttribute="bottom" id="8xL-S7-YDU"/>
+                <constraint firstItem="xIM-Ej-bzc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jan-em-m0r"/>
+                <constraint firstItem="xIM-Ej-bzc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lhb-Yr-67j"/>
+                <constraint firstItem="be4-WY-o5B" firstAttribute="top" secondItem="xIM-Ej-bzc" secondAttribute="bottom" constant="20" id="wnW-WA-SNa"/>
+                <constraint firstItem="Nxd-Lz-C3z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xPJ-t8-XFJ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="80.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group" width="99" height="67"/>
+        <image name="weatherCloudynightWhite" width="105" height="104"/>
+        <image name="weatherCloudynightWhiteCopy" width="162" height="108"/>
+    </resources>
+</document>

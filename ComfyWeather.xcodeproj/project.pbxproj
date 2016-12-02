@@ -1,0 +1,1174 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C054DD01D995A5500FE115A /* ComfyWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C054DCF1D995A5500FE115A /* ComfyWeatherTests.swift */; };
+		0C054DE01D995BB700FE115A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C054DDF1D995BB700FE115A /* LaunchScreen.xib */; };
+		0C054DE81D995C6E00FE115A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C054DE71D995C6E00FE115A /* AppDelegate.swift */; };
+		0C054DEB1D995CD600FE115A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C054DE91D995CD600FE115A /* RootViewController.swift */; };
+		0C054DEC1D995CD600FE115A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C054DEA1D995CD600FE115A /* RootViewController.xib */; };
+		6631C22CA052706138B4CC5F /* Pods_ComfyWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5890D70131F09791A93C8D2 /* Pods_ComfyWeather.framework */; };
+		690807C71DB9750A0035D794 /* PreviousOutfitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690807C61DB9750A0035D794 /* PreviousOutfitsTests.swift */; };
+		690BB23E1D9EB66500EA3BAE /* TakePhotoComfyWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB23D1D9EB66500EA3BAE /* TakePhotoComfyWeatherTests.swift */; };
+		690BB2421D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690BB2401D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.xib */; };
+		690BD2E81DB550AB00D08F4B /* FetchWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BD2E71DB550AB00D08F4B /* FetchWeatherService.swift */; };
+		691486DB1DBF99CB007B79BB /* PreviousOutfitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691486DA1DBF99CB007B79BB /* PreviousOutfitsRequest.swift */; };
+		691496691DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691496671DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.swift */; };
+		6914966A1DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691496681DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.xib */; };
+		693619C21DA53F4600D787B5 /* UINavigationController+ComfyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693619C11DA53F4600D787B5 /* UINavigationController+ComfyWeather.swift */; };
+		693619CB1DA5526A00D787B5 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693619C91DA5526A00D787B5 /* AddPhotoViewController.swift */; };
+		693619DE1DA58ED300D787B5 /* AddPhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693619DD1DA58ED300D787B5 /* AddPhotoStoryboard.storyboard */; };
+		693619E01DA59B3400D787B5 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693619DF1DA59B3400D787B5 /* PhotoCollectionViewCell.swift */; };
+		694611461DB6857400ADA336 /* PreviousOutfitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694611451DB6857400ADA336 /* PreviousOutfitsViewModel.swift */; };
+		6946114B1DB691CB00ADA336 /* PreviousOutfitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694611491DB691CB00ADA336 /* PreviousOutfitTableViewCell.swift */; };
+		6946114C1DB691CB00ADA336 /* PreviousOutfitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6946114A1DB691CB00ADA336 /* PreviousOutfitTableViewCell.xib */; };
+		6946114E1DB694D900ADA336 /* PreviousOutfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946114D1DB694D900ADA336 /* PreviousOutfit.swift */; };
+		694611531DB6A6E700ADA336 /* PreviousOutfitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694611511DB6A6E700ADA336 /* PreviousOutfitsViewController.swift */; };
+		694611541DB6A6E700ADA336 /* PreviousOutfitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694611521DB6A6E700ADA336 /* PreviousOutfitsViewController.xib */; };
+		6959D2D21DB7CEC3000EF4AB /* MockPreviousOutfitsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6959D2D11DB7CEC3000EF4AB /* MockPreviousOutfitsData.json */; };
+		6959D2D41DB7E3A0000EF4AB /* ClothingArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959D2D31DB7E3A0000EF4AB /* ClothingArticle.swift */; };
+		69AB02821DBEA69B00C2646C /* PreviousOutfitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AB02811DBEA69B00C2646C /* PreviousOutfitViewModel.swift */; };
+		69B71B901D9C1013005CE752 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B71B8E1D9C1013005CE752 /* TakePhotoViewController.swift */; };
+		69B71B911D9C1013005CE752 /* TakePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B71B8F1D9C1013005CE752 /* TakePhotoViewController.xib */; };
+		69B71B961D9C5BC9005CE752 /* SavePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B71B941D9C5BC9005CE752 /* SavePhotoViewController.swift */; };
+		69B71B971D9C5BC9005CE752 /* SavePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B71B951D9C5BC9005CE752 /* SavePhotoViewController.xib */; };
+		69BED5F01DAFC36100E0041F /* WeatherTypeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BED5EF1DAFC36100E0041F /* WeatherTypeViewModelTests.swift */; };
+		69BED5F71DAFF94D00E0041F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BED5F61DAFF94D00E0041F /* Weather.swift */; };
+		69C718631DAEA3B0003CD1C7 /* WeatherTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C718621DAEA3B0003CD1C7 /* WeatherTypeViewModel.swift */; };
+		E70ABA451DB1569E0059E0D0 /* AddClothingInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70ABA401DB1569E0059E0D0 /* AddClothingInputView.swift */; };
+		E70ABA461DB1569E0059E0D0 /* AddClothingInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70ABA411DB1569E0059E0D0 /* AddClothingInputView.xib */; };
+		E70ABA471DB1569E0059E0D0 /* AddClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70ABA431DB1569E0059E0D0 /* AddClothingView.swift */; };
+		E70ABA481DB1569E0059E0D0 /* AddClothingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70ABA441DB1569E0059E0D0 /* AddClothingView.xib */; };
+		E70EF80E1DB549F200161E40 /* ClothingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EF80B1DB549F200161E40 /* ClothingItemCell.swift */; };
+		E70EF80F1DB549F200161E40 /* ClothingItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70EF80C1DB549F200161E40 /* ClothingItemCell.xib */; };
+		E70EF8101DB549F200161E40 /* ClothingItemCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EF80D1DB549F200161E40 /* ClothingItemCellViewModel.swift */; };
+		E7174D461DB802EF004168B8 /* AddClothingInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7174D451DB802EF004168B8 /* AddClothingInputViewModel.swift */; };
+		E7218ED31DB91AC300004F97 /* ClothingCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7218ED21DB91AC300004F97 /* ClothingCategoryRequest.swift */; };
+		E722BD2C1DB441DC00B02951 /* AddOutfitViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722BD2B1DB441DC00B02951 /* AddOutfitViewModelTests.swift */; };
+		E723F3741D9EE08800F26D11 /* LoginRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723F3721D9EE08800F26D11 /* LoginRequestTests.swift */; };
+		E747117B1DAAC7E0006FE073 /* ForecastColumnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E747117A1DAAC7E0006FE073 /* ForecastColumnViewModel.swift */; };
+		E75183E31D9C6C43009BB066 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75183E21D9C6C43009BB066 /* User.swift */; };
+		E76C92D11DA7DB1E002C7655 /* ForecastColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76C92CF1DA7DB1E002C7655 /* ForecastColumnView.swift */; };
+		E76C92D21DA7DB1E002C7655 /* ForecastColumnView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76C92D01DA7DB1E002C7655 /* ForecastColumnView.xib */; };
+		E771CF601D9C2B2700AE6F19 /* Chivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C38BA21D9B134700B2297D /* Chivo-Bold.ttf */; };
+		E77A04C51DBA830700AC1344 /* URL+https.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A04C41DBA830700AC1344 /* URL+https.swift */; };
+		E7875C981DA7E220004191FA /* Bundle+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7875C971DA7E220004191FA /* Bundle+Load.swift */; };
+		E791DDEE1D9C2F9400E4516E /* Chivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDE81D9C2F9400E4516E /* Chivo-Black.ttf */; };
+		E791DDEF1D9C2F9400E4516E /* Chivo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDE91D9C2F9400E4516E /* Chivo-BlackItalic.ttf */; };
+		E791DDF01D9C2F9400E4516E /* Chivo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDEA1D9C2F9400E4516E /* Chivo-BoldItalic.ttf */; };
+		E791DDF11D9C2F9400E4516E /* Chivo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDEB1D9C2F9400E4516E /* Chivo-Italic.ttf */; };
+		E791DDF21D9C2F9400E4516E /* Chivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDEC1D9C2F9400E4516E /* Chivo-Light.ttf */; };
+		E791DDF31D9C2F9400E4516E /* Chivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E791DDED1D9C2F9400E4516E /* Chivo-LightItalic.ttf */; };
+		E791DDF61D9C306800E4516E /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791DDF51D9C306800E4516E /* FontTests.swift */; };
+		E791DDF81D9C514B00E4516E /* BackendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E791DDF71D9C514B00E4516E /* BackendRequest.swift */; };
+		E7B1FDD21DA42A84003C3E66 /* HomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1FDD01DA42A84003C3E66 /* HomeScreenController.swift */; };
+		E7B1FDD31DA42A84003C3E66 /* HomeScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B1FDD11DA42A84003C3E66 /* HomeScreenController.xib */; };
+		E7B1FDDB1DA4350D003C3E66 /* UIView+Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1FDDA1DA4350D003C3E66 /* UIView+Subview.swift */; };
+		E7BA00731DA547E500376341 /* Double+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA00721DA547E500376341 /* Double+Math.swift */; };
+		E7BA00761DA559E800376341 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BA00751DA559E800376341 /* HomeScreenViewModel.swift */; };
+		E7C38B9A1D9AE52900B2297D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38B981D9AE52900B2297D /* LoginViewController.swift */; };
+		E7C38B9B1D9AE52900B2297D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C38B991D9AE52900B2297D /* LoginViewController.xib */; };
+		E7C38B9D1D9B071A00B2297D /* UIColor+ComfyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38B9C1D9B071A00B2297D /* UIColor+ComfyWeather.swift */; };
+		E7C38B9F1D9B09EC00B2297D /* UIFont+ComfyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38B9E1D9B09EC00B2297D /* UIFont+ComfyWeather.swift */; };
+		E7C38BA61D9B134700B2297D /* Slabo13px-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C38BA41D9B134700B2297D /* Slabo13px-Regular.ttf */; };
+		E7C38BA81D9B179E00B2297D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C38BA71D9B179E00B2297D /* LoginViewModel.swift */; };
+		E7D5BF0C1DB65B34006CE743 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5BF0B1DB65B34006CE743 /* Result.swift */; };
+		E7D5BF101DB667AA006CE743 /* CommonDateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5BF0F1DB667AA006CE743 /* CommonDateFormatters.swift */; };
+		E7D5BF121DB6689E006CE743 /* ClothingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5BF111DB6689E006CE743 /* ClothingCategory.swift */; };
+		E7D5BF171DB678EC006CE743 /* ClothingCategoryRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D5BF161DB678EC006CE743 /* ClothingCategoryRequestTests.swift */; };
+		E7D641251DBEAA5900C7E79C /* ArticleOfClothingCreationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D641241DBEAA5900C7E79C /* ArticleOfClothingCreationRequest.swift */; };
+		E7D641271DBEAB6D00C7E79C /* ArticleOfClothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D641261DBEAB6D00C7E79C /* ArticleOfClothing.swift */; };
+		E7D641291DBEB6CB00C7E79C /* ArticleOfClothingCreationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D641281DBEB6CB00C7E79C /* ArticleOfClothingCreationRequestTests.swift */; };
+		E7D6412B1DBFADBB00C7E79C /* OutfitCreationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6412A1DBFADBB00C7E79C /* OutfitCreationRequest.swift */; };
+		E7D6412D1DBFB7DC00C7E79C /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6412C1DBFB7DC00C7E79C /* Outfit.swift */; };
+		E7D6412F1DBFF14E00C7E79C /* OutfitCreationRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D6412E1DBFF14E00C7E79C /* OutfitCreationRequestTests.swift */; };
+		E7E2973D1DB958FB00E4ED27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C054DC11D995A5500FE115A /* Assets.xcassets */; };
+		E7E2973F1DB95ECD00E4ED27 /* URL+IconURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E2973E1DB95ECD00E4ED27 /* URL+IconURLs.swift */; };
+		E7E297431DB9612200E4ED27 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E297421DB9612200E4ED27 /* LoginRequest.swift */; };
+		E7EB5BD61DB27C8C0019EBCB /* UITableView+RegisterNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5BD51DB27C8C0019EBCB /* UITableView+RegisterNib.swift */; };
+		E7EB5BD81DB27DCC0019EBCB /* UICollectionView+RegisterNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5BD71DB27DCC0019EBCB /* UICollectionView+RegisterNib.swift */; };
+		E7EB5BDA1DB29A520019EBCB /* AddOutfitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EB5BD91DB29A520019EBCB /* AddOutfitViewModel.swift */; };
+		EDC5F31940A0D1CA94DB2911 /* Pods_ComfyWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EB75F8838638E4ED6C2EF5 /* Pods_ComfyWeatherTests.framework */; };
+		F80E2C4E1DB54F8F00FD7976 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E2C4D1DB54F8F00FD7976 /* LocationServiceTests.swift */; };
+		F83A8BB11D9EBF8600EFF720 /* WeatherTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83A8BB01D9EBF8600EFF720 /* WeatherTypeView.swift */; };
+		F83A8BB31D9EBF9800EFF720 /* WeatherTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83A8BB21D9EBF9800EFF720 /* WeatherTypeView.xib */; };
+		F8456A411DBDA7150003B558 /* WeatherAssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8456A401DBDA7150003B558 /* WeatherAssetsViewModel.swift */; };
+		F8456A431DBDC6E50003B558 /* WeatherAssetsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8456A421DBDC6E50003B558 /* WeatherAssetsViewModelTests.swift */; };
+		F8568A781DBE9E63009EB0D3 /* AddOutfitHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8568A771DBE9E63009EB0D3 /* AddOutfitHeaderViewModel.swift */; };
+		F8568A7E1DBFF3AF009EB0D3 /* WeatherAddOutfitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8568A7D1DBFF3AF009EB0D3 /* WeatherAddOutfitView.swift */; };
+		F8568A801DBFF3D3009EB0D3 /* WeatherAddOutfitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8568A7F1DBFF3D3009EB0D3 /* WeatherAddOutfitView.xib */; };
+		F8568A821DC00112009EB0D3 /* WeatherHomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8568A811DC00112009EB0D3 /* WeatherHomeScreenView.swift */; };
+		F8568A841DC00126009EB0D3 /* WeatherHomeScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8568A831DC00126009EB0D3 /* WeatherHomeScreenView.xib */; };
+		F89BBCD41D9AE08400E9CAF6 /* AddOutfitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F89BBCD31D9AE08400E9CAF6 /* AddOutfitStoryboard.storyboard */; };
+		F89BBCDA1D9B1E2500E9CAF6 /* AddOutfitHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F89BBCD91D9B1E2500E9CAF6 /* AddOutfitHeaderView.xib */; };
+		F89BBCDC1D9B1E6E00E9CAF6 /* AddOutfitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89BBCDB1D9B1E6E00E9CAF6 /* AddOutfitHeaderView.swift */; };
+		F8C2C2BD1DAD385700F6101E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C2C2BC1DAD385700F6101E /* LocationService.swift */; };
+		F8D39F6E1DAE78A6002750D8 /* OutfitPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B71B921D9C1078005CE752 /* OutfitPhotoViewModel.swift */; };
+		F8D39F6F1DAE78AC002750D8 /* DeniedCameraPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB23F1D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.swift */; };
+		F8E0C3581DA6E69500A65267 /* PermissionLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C3561DA6E69500A65267 /* PermissionLocationViewController.swift */; };
+		F8E0C3591DA6E69500A65267 /* PermissionLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C3571DA6E69500A65267 /* PermissionLocationViewController.xib */; };
+		F8E0C35B1DA6E88C00A65267 /* PermissionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C35A1DA6E88C00A65267 /* PermissionLocation.swift */; };
+		F8E0C35E1DA6ECF300A65267 /* BlurModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C35D1DA6ECF300A65267 /* BlurModalPresentationController.swift */; };
+		F8E0C3601DA6F03C00A65267 /* CGRect+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C35F1DA6F03C00A65267 /* CGRect+Math.swift */; };
+		F8F781571DA2DB1700433B44 /* UILabel+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F781561DA2DB1700433B44 /* UILabel+Typography.swift */; };
+		F8F781591DA2E66F00433B44 /* AddOutfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F781581DA2E66F00433B44 /* AddOutfitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C054DCC1D995A5500FE115A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C054DAF1D995A5500FE115A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C054DB61D995A5500FE115A;
+			remoteInfo = ComfyWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C054DB71D995A5500FE115A /* ComfyWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComfyWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C054DC11D995A5500FE115A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		0C054DC61D995A5500FE115A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		0C054DCB1D995A5500FE115A /* ComfyWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComfyWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C054DCF1D995A5500FE115A /* ComfyWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfyWeatherTests.swift; sourceTree = "<group>"; };
+		0C054DD11D995A5500FE115A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C054DDF1D995BB700FE115A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		0C054DE71D995C6E00FE115A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C054DE91D995CD600FE115A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0C054DEA1D995CD600FE115A /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		240F57F2BD375622D5359898 /* Pods-ComfyWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComfyWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComfyWeather/Pods-ComfyWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		690807C61DB9750A0035D794 /* PreviousOutfitsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousOutfitsTests.swift; sourceTree = "<group>"; };
+		690BB23D1D9EB66500EA3BAE /* TakePhotoComfyWeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoComfyWeatherTests.swift; sourceTree = "<group>"; };
+		690BB23F1D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeniedCameraPermissionsViewController.swift; sourceTree = "<group>"; };
+		690BB2401D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeniedCameraPermissionsViewController.xib; sourceTree = "<group>"; };
+		690BD2E71DB550AB00D08F4B /* FetchWeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FetchWeatherService.swift; path = FetchWeather/FetchWeatherService.swift; sourceTree = "<group>"; };
+		691486DA1DBF99CB007B79BB /* PreviousOutfitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousOutfitsRequest.swift; sourceTree = "<group>"; };
+		691496671DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoPreviousOutfitsTableViewCell.swift; path = ComfyWeather/Features/PreviousOutfits/NoPreviousOutfitsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		691496681DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoPreviousOutfitsTableViewCell.xib; path = ComfyWeather/Features/PreviousOutfits/NoPreviousOutfitsTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		693619C11DA53F4600D787B5 /* UINavigationController+ComfyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ComfyWeather.swift"; sourceTree = "<group>"; };
+		693619C91DA5526A00D787B5 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		693619DD1DA58ED300D787B5 /* AddPhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		693619DF1DA59B3400D787B5 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		694611451DB6857400ADA336 /* PreviousOutfitsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousOutfitsViewModel.swift; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitsViewModel.swift; sourceTree = SOURCE_ROOT; };
+		694611491DB691CB00ADA336 /* PreviousOutfitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousOutfitTableViewCell.swift; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		6946114A1DB691CB00ADA336 /* PreviousOutfitTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreviousOutfitTableViewCell.xib; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		6946114D1DB694D900ADA336 /* PreviousOutfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousOutfit.swift; sourceTree = "<group>"; };
+		694611511DB6A6E700ADA336 /* PreviousOutfitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousOutfitsViewController.swift; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitsViewController.swift; sourceTree = SOURCE_ROOT; };
+		694611521DB6A6E700ADA336 /* PreviousOutfitsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreviousOutfitsViewController.xib; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitsViewController.xib; sourceTree = SOURCE_ROOT; };
+		6959D2D11DB7CEC3000EF4AB /* MockPreviousOutfitsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockPreviousOutfitsData.json; sourceTree = "<group>"; };
+		6959D2D31DB7E3A0000EF4AB /* ClothingArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingArticle.swift; sourceTree = "<group>"; };
+		69AB02811DBEA69B00C2646C /* PreviousOutfitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousOutfitViewModel.swift; path = ComfyWeather/Features/PreviousOutfits/PreviousOutfitViewModel.swift; sourceTree = SOURCE_ROOT; };
+		69B71B8E1D9C1013005CE752 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		69B71B8F1D9C1013005CE752 /* TakePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoViewController.xib; sourceTree = "<group>"; };
+		69B71B921D9C1078005CE752 /* OutfitPhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitPhotoViewModel.swift; sourceTree = "<group>"; };
+		69B71B941D9C5BC9005CE752 /* SavePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePhotoViewController.swift; sourceTree = "<group>"; };
+		69B71B951D9C5BC9005CE752 /* SavePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavePhotoViewController.xib; sourceTree = "<group>"; };
+		69BED5EF1DAFC36100E0041F /* WeatherTypeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTypeViewModelTests.swift; sourceTree = "<group>"; };
+		69BED5F61DAFF94D00E0041F /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weather.swift; path = ../Features/FetchWeather/Weather.swift; sourceTree = "<group>"; };
+		69C718621DAEA3B0003CD1C7 /* WeatherTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTypeViewModel.swift; sourceTree = "<group>"; };
+		74B485D0FA55938B40B39EFB /* Pods-ComfyWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComfyWeatherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComfyWeatherTests/Pods-ComfyWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4EB75F8838638E4ED6C2EF5 /* Pods_ComfyWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComfyWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55CBACB69E6D1362CE52B0C /* Pods-ComfyWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComfyWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComfyWeatherTests/Pods-ComfyWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5890D70131F09791A93C8D2 /* Pods_ComfyWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComfyWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70ABA401DB1569E0059E0D0 /* AddClothingInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClothingInputView.swift; sourceTree = "<group>"; };
+		E70ABA411DB1569E0059E0D0 /* AddClothingInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddClothingInputView.xib; sourceTree = "<group>"; };
+		E70ABA431DB1569E0059E0D0 /* AddClothingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClothingView.swift; sourceTree = "<group>"; };
+		E70ABA441DB1569E0059E0D0 /* AddClothingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddClothingView.xib; sourceTree = "<group>"; };
+		E70EF80B1DB549F200161E40 /* ClothingItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemCell.swift; sourceTree = "<group>"; };
+		E70EF80C1DB549F200161E40 /* ClothingItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClothingItemCell.xib; sourceTree = "<group>"; };
+		E70EF80D1DB549F200161E40 /* ClothingItemCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemCellViewModel.swift; sourceTree = "<group>"; };
+		E7174D451DB802EF004168B8 /* AddClothingInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClothingInputViewModel.swift; sourceTree = "<group>"; };
+		E7218ED21DB91AC300004F97 /* ClothingCategoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCategoryRequest.swift; sourceTree = "<group>"; };
+		E722BD2B1DB441DC00B02951 /* AddOutfitViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutfitViewModelTests.swift; sourceTree = "<group>"; };
+		E723F3721D9EE08800F26D11 /* LoginRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestTests.swift; sourceTree = "<group>"; };
+		E747117A1DAAC7E0006FE073 /* ForecastColumnViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastColumnViewModel.swift; sourceTree = "<group>"; };
+		E75183E21D9C6C43009BB066 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E76C92CF1DA7DB1E002C7655 /* ForecastColumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastColumnView.swift; sourceTree = "<group>"; };
+		E76C92D01DA7DB1E002C7655 /* ForecastColumnView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastColumnView.xib; sourceTree = "<group>"; };
+		E77A04C41DBA830700AC1344 /* URL+https.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+https.swift"; sourceTree = "<group>"; };
+		E7875C971DA7E220004191FA /* Bundle+Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Load.swift"; sourceTree = "<group>"; };
+		E791DDE81D9C2F9400E4516E /* Chivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Black.ttf"; sourceTree = "<group>"; };
+		E791DDE91D9C2F9400E4516E /* Chivo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E791DDEA1D9C2F9400E4516E /* Chivo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E791DDEB1D9C2F9400E4516E /* Chivo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Italic.ttf"; sourceTree = "<group>"; };
+		E791DDEC1D9C2F9400E4516E /* Chivo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Light.ttf"; sourceTree = "<group>"; };
+		E791DDED1D9C2F9400E4516E /* Chivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-LightItalic.ttf"; sourceTree = "<group>"; };
+		E791DDF51D9C306800E4516E /* FontTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
+		E791DDF71D9C514B00E4516E /* BackendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendRequest.swift; sourceTree = "<group>"; };
+		E7B1FDD01DA42A84003C3E66 /* HomeScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenController.swift; sourceTree = "<group>"; };
+		E7B1FDD11DA42A84003C3E66 /* HomeScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenController.xib; sourceTree = "<group>"; };
+		E7B1FDDA1DA4350D003C3E66 /* UIView+Subview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subview.swift"; sourceTree = "<group>"; };
+		E7BA00721DA547E500376341 /* Double+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Math.swift"; sourceTree = "<group>"; };
+		E7BA00751DA559E800376341 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		E7C38B981D9AE52900B2297D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7C38B991D9AE52900B2297D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E7C38B9C1D9B071A00B2297D /* UIColor+ComfyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ComfyWeather.swift"; sourceTree = "<group>"; };
+		E7C38B9E1D9B09EC00B2297D /* UIFont+ComfyWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+ComfyWeather.swift"; sourceTree = "<group>"; };
+		E7C38BA21D9B134700B2297D /* Chivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chivo-Bold.ttf"; sourceTree = "<group>"; };
+		E7C38BA41D9B134700B2297D /* Slabo13px-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slabo13px-Regular.ttf"; sourceTree = "<group>"; };
+		E7C38BA71D9B179E00B2297D /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E7D5BF0B1DB65B34006CE743 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E7D5BF0F1DB667AA006CE743 /* CommonDateFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDateFormatters.swift; sourceTree = "<group>"; };
+		E7D5BF111DB6689E006CE743 /* ClothingCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCategory.swift; sourceTree = "<group>"; };
+		E7D5BF161DB678EC006CE743 /* ClothingCategoryRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingCategoryRequestTests.swift; sourceTree = "<group>"; };
+		E7D641241DBEAA5900C7E79C /* ArticleOfClothingCreationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleOfClothingCreationRequest.swift; sourceTree = "<group>"; };
+		E7D641261DBEAB6D00C7E79C /* ArticleOfClothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleOfClothing.swift; sourceTree = "<group>"; };
+		E7D641281DBEB6CB00C7E79C /* ArticleOfClothingCreationRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleOfClothingCreationRequestTests.swift; sourceTree = "<group>"; };
+		E7D6412A1DBFADBB00C7E79C /* OutfitCreationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitCreationRequest.swift; sourceTree = "<group>"; };
+		E7D6412C1DBFB7DC00C7E79C /* Outfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
+		E7D6412E1DBFF14E00C7E79C /* OutfitCreationRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitCreationRequestTests.swift; sourceTree = "<group>"; };
+		E7E2973E1DB95ECD00E4ED27 /* URL+IconURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+IconURLs.swift"; sourceTree = "<group>"; };
+		E7E297421DB9612200E4ED27 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		E7EB5BD51DB27C8C0019EBCB /* UITableView+RegisterNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterNib.swift"; sourceTree = "<group>"; };
+		E7EB5BD71DB27DCC0019EBCB /* UICollectionView+RegisterNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterNib.swift"; sourceTree = "<group>"; };
+		E7EB5BD91DB29A520019EBCB /* AddOutfitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutfitViewModel.swift; sourceTree = "<group>"; };
+		F5D146F9AAEE2578A9FB2907 /* Pods-ComfyWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComfyWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComfyWeather/Pods-ComfyWeather.release.xcconfig"; sourceTree = "<group>"; };
+		F80E2C4D1DB54F8F00FD7976 /* LocationServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
+		F83A8BB01D9EBF8600EFF720 /* WeatherTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTypeView.swift; sourceTree = "<group>"; };
+		F83A8BB21D9EBF9800EFF720 /* WeatherTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherTypeView.xib; sourceTree = "<group>"; };
+		F8456A401DBDA7150003B558 /* WeatherAssetsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAssetsViewModel.swift; sourceTree = "<group>"; };
+		F8456A421DBDC6E50003B558 /* WeatherAssetsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAssetsViewModelTests.swift; sourceTree = "<group>"; };
+		F8568A771DBE9E63009EB0D3 /* AddOutfitHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutfitHeaderViewModel.swift; sourceTree = "<group>"; };
+		F8568A7D1DBFF3AF009EB0D3 /* WeatherAddOutfitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAddOutfitView.swift; sourceTree = "<group>"; };
+		F8568A7F1DBFF3D3009EB0D3 /* WeatherAddOutfitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherAddOutfitView.xib; sourceTree = "<group>"; };
+		F8568A811DC00112009EB0D3 /* WeatherHomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherHomeScreenView.swift; sourceTree = "<group>"; };
+		F8568A831DC00126009EB0D3 /* WeatherHomeScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherHomeScreenView.xib; sourceTree = "<group>"; };
+		F89BBCD31D9AE08400E9CAF6 /* AddOutfitStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddOutfitStoryboard.storyboard; sourceTree = "<group>"; };
+		F89BBCD91D9B1E2500E9CAF6 /* AddOutfitHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddOutfitHeaderView.xib; path = ComfyWeather/Features/AddOutfit/AddOutfitHeaderView.xib; sourceTree = SOURCE_ROOT; };
+		F89BBCDB1D9B1E6E00E9CAF6 /* AddOutfitHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutfitHeaderView.swift; sourceTree = "<group>"; };
+		F8C2C2BC1DAD385700F6101E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F8E0C3561DA6E69500A65267 /* PermissionLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionLocationViewController.swift; sourceTree = "<group>"; };
+		F8E0C3571DA6E69500A65267 /* PermissionLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionLocationViewController.xib; sourceTree = "<group>"; };
+		F8E0C35A1DA6E88C00A65267 /* PermissionLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionLocation.swift; sourceTree = "<group>"; };
+		F8E0C35D1DA6ECF300A65267 /* BlurModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurModalPresentationController.swift; sourceTree = "<group>"; };
+		F8E0C35F1DA6F03C00A65267 /* CGRect+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Math.swift"; sourceTree = "<group>"; };
+		F8F781561DA2DB1700433B44 /* UILabel+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Typography.swift"; sourceTree = "<group>"; };
+		F8F781581DA2E66F00433B44 /* AddOutfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOutfitViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C054DB41D995A5500FE115A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6631C22CA052706138B4CC5F /* Pods_ComfyWeather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C054DC81D995A5500FE115A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC5F31940A0D1CA94DB2911 /* Pods_ComfyWeatherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C054DAE1D995A5500FE115A = {
+			isa = PBXGroup;
+			children = (
+				0C054DB91D995A5500FE115A /* ComfyWeather */,
+				0C054DCE1D995A5500FE115A /* ComfyWeatherTests */,
+				0C054DB81D995A5500FE115A /* Products */,
+				A3AC63D829BCD8A87B3DE36D /* Pods */,
+				94EACFCFC845830475E21EBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C054DB81D995A5500FE115A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C054DB71D995A5500FE115A /* ComfyWeather.app */,
+				0C054DCB1D995A5500FE115A /* ComfyWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C054DB91D995A5500FE115A /* ComfyWeather */ = {
+			isa = PBXGroup;
+			children = (
+				E75183E11D9C6C43009BB066 /* Models */,
+				0C054DE41D995C4200FE115A /* Controllers */,
+				0C054DDB1D995B9B00FE115A /* Extensions */,
+				0C054DDC1D995B9B00FE115A /* Features */,
+				0C054DDD1D995B9B00FE115A /* Networking */,
+				0C054DDE1D995B9B00FE115A /* Resources */,
+			);
+			path = ComfyWeather;
+			sourceTree = "<group>";
+		};
+		0C054DCE1D995A5500FE115A /* ComfyWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				E722BD291DB441C100B02951 /* Features */,
+				E723F3711D9EE08800F26D11 /* Networking */,
+				E791DDF41D9C306800E4516E /* AssetTests */,
+				0C054DCF1D995A5500FE115A /* ComfyWeatherTests.swift */,
+				F80E2C4D1DB54F8F00FD7976 /* LocationServiceTests.swift */,
+				690BB23D1D9EB66500EA3BAE /* TakePhotoComfyWeatherTests.swift */,
+				69BED5EF1DAFC36100E0041F /* WeatherTypeViewModelTests.swift */,
+				690807C61DB9750A0035D794 /* PreviousOutfitsTests.swift */,
+				F8456A421DBDC6E50003B558 /* WeatherAssetsViewModelTests.swift */,
+				0C054DD11D995A5500FE115A /* Info.plist */,
+			);
+			path = ComfyWeatherTests;
+			sourceTree = "<group>";
+		};
+		0C054DDB1D995B9B00FE115A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C35F1DA6F03C00A65267 /* CGRect+Math.swift */,
+				E7C38B9C1D9B071A00B2297D /* UIColor+ComfyWeather.swift */,
+				F8F781561DA2DB1700433B44 /* UILabel+Typography.swift */,
+				E7C38B9E1D9B09EC00B2297D /* UIFont+ComfyWeather.swift */,
+				693619C11DA53F4600D787B5 /* UINavigationController+ComfyWeather.swift */,
+				E7B1FDDA1DA4350D003C3E66 /* UIView+Subview.swift */,
+				E7875C971DA7E220004191FA /* Bundle+Load.swift */,
+				E7BA00721DA547E500376341 /* Double+Math.swift */,
+				E7EB5BD51DB27C8C0019EBCB /* UITableView+RegisterNib.swift */,
+				E7EB5BD71DB27DCC0019EBCB /* UICollectionView+RegisterNib.swift */,
+				E7E2973E1DB95ECD00E4ED27 /* URL+IconURLs.swift */,
+				E77A04C41DBA830700AC1344 /* URL+https.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0C054DDC1D995B9B00FE115A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F8456A391DB958E50003B558 /* AddWeatherAssets */,
+				E70EF80A1DB549F200161E40 /* ClothingItemCell */,
+				E775A6051DA40AE30048C45A /* HomeScreen */,
+				6946113E1DB6718700ADA336 /* PreviousOutfits */,
+				F8BD70871DA54EA200A7FC9A /* LocationPermissions */,
+				69BED5F51DAFF8D200E0041F /* FetchWeather */,
+				E7C38B971D9AE52900B2297D /* LoginViaFacebook */,
+				F8E0C35C1DA6ECF200A65267 /* BlurModalPresentation */,
+				F89BBCD21D9AE05600E9CAF6 /* AddOutfit */,
+				E70ABA3F1DB1569E0059E0D0 /* AddClothingInputView */,
+				E70ABA421DB1569E0059E0D0 /* AddClothingView */,
+				69B71B8D1D9C1013005CE752 /* TakePhoto */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0C054DDD1D995B9B00FE115A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E791DDF71D9C514B00E4516E /* BackendRequest.swift */,
+				E7218ED21DB91AC300004F97 /* ClothingCategoryRequest.swift */,
+				691486DA1DBF99CB007B79BB /* PreviousOutfitsRequest.swift */,
+				E7E297421DB9612200E4ED27 /* LoginRequest.swift */,
+				E7D641241DBEAA5900C7E79C /* ArticleOfClothingCreationRequest.swift */,
+				E7D6412A1DBFADBB00C7E79C /* OutfitCreationRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0C054DDE1D995B9B00FE115A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C054DC11D995A5500FE115A /* Assets.xcassets */,
+				E7C38BA01D9B134700B2297D /* Fonts */,
+				0C054DC61D995A5500FE115A /* Info.plist */,
+				0C054DDF1D995BB700FE115A /* LaunchScreen.xib */,
+				6959D2D11DB7CEC3000EF4AB /* MockPreviousOutfitsData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C054DE41D995C4200FE115A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C054DE71D995C6E00FE115A /* AppDelegate.swift */,
+				0C054DE91D995CD600FE115A /* RootViewController.swift */,
+				0C054DEA1D995CD600FE115A /* RootViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6946113E1DB6718700ADA336 /* PreviousOutfits */ = {
+			isa = PBXGroup;
+			children = (
+				694611451DB6857400ADA336 /* PreviousOutfitsViewModel.swift */,
+				694611511DB6A6E700ADA336 /* PreviousOutfitsViewController.swift */,
+				694611521DB6A6E700ADA336 /* PreviousOutfitsViewController.xib */,
+				69AB02811DBEA69B00C2646C /* PreviousOutfitViewModel.swift */,
+				694611491DB691CB00ADA336 /* PreviousOutfitTableViewCell.swift */,
+				6946114A1DB691CB00ADA336 /* PreviousOutfitTableViewCell.xib */,
+				691496671DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.swift */,
+				691496681DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.xib */,
+			);
+			name = PreviousOutfits;
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		69B71B8D1D9C1013005CE752 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				69B71B921D9C1078005CE752 /* OutfitPhotoViewModel.swift */,
+				693619C91DA5526A00D787B5 /* AddPhotoViewController.swift */,
+				693619DF1DA59B3400D787B5 /* PhotoCollectionViewCell.swift */,
+				693619DD1DA58ED300D787B5 /* AddPhotoStoryboard.storyboard */,
+				69B71B8E1D9C1013005CE752 /* TakePhotoViewController.swift */,
+				69B71B8F1D9C1013005CE752 /* TakePhotoViewController.xib */,
+				69B71B941D9C5BC9005CE752 /* SavePhotoViewController.swift */,
+				69B71B951D9C5BC9005CE752 /* SavePhotoViewController.xib */,
+				690BB23F1D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.swift */,
+				690BB2401D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.xib */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
+		69BED5F51DAFF8D200E0041F /* FetchWeather */ = {
+			isa = PBXGroup;
+			children = (
+				690BD2E71DB550AB00D08F4B /* FetchWeatherService.swift */,
+			);
+			name = FetchWeather;
+			sourceTree = "<group>";
+		};
+		94EACFCFC845830475E21EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5890D70131F09791A93C8D2 /* Pods_ComfyWeather.framework */,
+				A4EB75F8838638E4ED6C2EF5 /* Pods_ComfyWeatherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3AC63D829BCD8A87B3DE36D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				240F57F2BD375622D5359898 /* Pods-ComfyWeather.debug.xcconfig */,
+				F5D146F9AAEE2578A9FB2907 /* Pods-ComfyWeather.release.xcconfig */,
+				B55CBACB69E6D1362CE52B0C /* Pods-ComfyWeatherTests.debug.xcconfig */,
+				74B485D0FA55938B40B39EFB /* Pods-ComfyWeatherTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E70ABA3F1DB1569E0059E0D0 /* AddClothingInputView */ = {
+			isa = PBXGroup;
+			children = (
+				E70ABA401DB1569E0059E0D0 /* AddClothingInputView.swift */,
+				E7174D451DB802EF004168B8 /* AddClothingInputViewModel.swift */,
+				E70ABA411DB1569E0059E0D0 /* AddClothingInputView.xib */,
+			);
+			path = AddClothingInputView;
+			sourceTree = "<group>";
+		};
+		E70ABA421DB1569E0059E0D0 /* AddClothingView */ = {
+			isa = PBXGroup;
+			children = (
+				E70ABA431DB1569E0059E0D0 /* AddClothingView.swift */,
+				E70ABA441DB1569E0059E0D0 /* AddClothingView.xib */,
+			);
+			path = AddClothingView;
+			sourceTree = "<group>";
+		};
+		E70EF80A1DB549F200161E40 /* ClothingItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				E70EF80B1DB549F200161E40 /* ClothingItemCell.swift */,
+				E70EF80C1DB549F200161E40 /* ClothingItemCell.xib */,
+				E70EF80D1DB549F200161E40 /* ClothingItemCellViewModel.swift */,
+			);
+			path = ClothingItemCell;
+			sourceTree = "<group>";
+		};
+		E722BD291DB441C100B02951 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E722BD2A1DB441C100B02951 /* AddOutfit */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E722BD2A1DB441C100B02951 /* AddOutfit */ = {
+			isa = PBXGroup;
+			children = (
+				E722BD2B1DB441DC00B02951 /* AddOutfitViewModelTests.swift */,
+			);
+			path = AddOutfit;
+			sourceTree = "<group>";
+		};
+		E723F3711D9EE08800F26D11 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E723F3721D9EE08800F26D11 /* LoginRequestTests.swift */,
+				E7D5BF161DB678EC006CE743 /* ClothingCategoryRequestTests.swift */,
+				E7D641281DBEB6CB00C7E79C /* ArticleOfClothingCreationRequestTests.swift */,
+				E7D6412E1DBFF14E00C7E79C /* OutfitCreationRequestTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E75183E11D9C6C43009BB066 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7D5BF0F1DB667AA006CE743 /* CommonDateFormatters.swift */,
+				E75183E21D9C6C43009BB066 /* User.swift */,
+				6946114D1DB694D900ADA336 /* PreviousOutfit.swift */,
+				6959D2D31DB7E3A0000EF4AB /* ClothingArticle.swift */,
+				69BED5F61DAFF94D00E0041F /* Weather.swift */,
+				E7D5BF0B1DB65B34006CE743 /* Result.swift */,
+				E7D5BF111DB6689E006CE743 /* ClothingCategory.swift */,
+				E7D641261DBEAB6D00C7E79C /* ArticleOfClothing.swift */,
+				E7D6412C1DBFB7DC00C7E79C /* Outfit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E76C92CE1DA7DB1E002C7655 /* ForecastColumnView */ = {
+			isa = PBXGroup;
+			children = (
+				E76C92CF1DA7DB1E002C7655 /* ForecastColumnView.swift */,
+				E747117A1DAAC7E0006FE073 /* ForecastColumnViewModel.swift */,
+				E76C92D01DA7DB1E002C7655 /* ForecastColumnView.xib */,
+			);
+			path = ForecastColumnView;
+			sourceTree = "<group>";
+		};
+		E775A6051DA40AE30048C45A /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E7B1FDCF1DA42A84003C3E66 /* HomeScreenController */,
+				E76C92CE1DA7DB1E002C7655 /* ForecastColumnView */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E791DDF41D9C306800E4516E /* AssetTests */ = {
+			isa = PBXGroup;
+			children = (
+				E791DDF51D9C306800E4516E /* FontTests.swift */,
+			);
+			path = AssetTests;
+			sourceTree = "<group>";
+		};
+		E7B1FDCF1DA42A84003C3E66 /* HomeScreenController */ = {
+			isa = PBXGroup;
+			children = (
+				E7B1FDD01DA42A84003C3E66 /* HomeScreenController.swift */,
+				E7BA00751DA559E800376341 /* HomeScreenViewModel.swift */,
+				E7B1FDD11DA42A84003C3E66 /* HomeScreenController.xib */,
+			);
+			path = HomeScreenController;
+			sourceTree = "<group>";
+		};
+		E7C38B971D9AE52900B2297D /* LoginViaFacebook */ = {
+			isa = PBXGroup;
+			children = (
+				E7C38B981D9AE52900B2297D /* LoginViewController.swift */,
+				E7C38BA71D9B179E00B2297D /* LoginViewModel.swift */,
+				E7C38B991D9AE52900B2297D /* LoginViewController.xib */,
+			);
+			path = LoginViaFacebook;
+			sourceTree = "<group>";
+		};
+		E7C38BA01D9B134700B2297D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E7C38BA11D9B134700B2297D /* Chivo */,
+				E7C38BA31D9B134700B2297D /* Slabo */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E7C38BA11D9B134700B2297D /* Chivo */ = {
+			isa = PBXGroup;
+			children = (
+				E7C38BA21D9B134700B2297D /* Chivo-Bold.ttf */,
+				E791DDE81D9C2F9400E4516E /* Chivo-Black.ttf */,
+				E791DDE91D9C2F9400E4516E /* Chivo-BlackItalic.ttf */,
+				E791DDEA1D9C2F9400E4516E /* Chivo-BoldItalic.ttf */,
+				E791DDEB1D9C2F9400E4516E /* Chivo-Italic.ttf */,
+				E791DDEC1D9C2F9400E4516E /* Chivo-Light.ttf */,
+				E791DDED1D9C2F9400E4516E /* Chivo-LightItalic.ttf */,
+			);
+			path = Chivo;
+			sourceTree = "<group>";
+		};
+		E7C38BA31D9B134700B2297D /* Slabo */ = {
+			isa = PBXGroup;
+			children = (
+				E7C38BA41D9B134700B2297D /* Slabo13px-Regular.ttf */,
+			);
+			path = Slabo;
+			sourceTree = "<group>";
+		};
+		F8456A391DB958E50003B558 /* AddWeatherAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F8456A401DBDA7150003B558 /* WeatherAssetsViewModel.swift */,
+				F8568A7D1DBFF3AF009EB0D3 /* WeatherAddOutfitView.swift */,
+				F8568A7F1DBFF3D3009EB0D3 /* WeatherAddOutfitView.xib */,
+				F8568A811DC00112009EB0D3 /* WeatherHomeScreenView.swift */,
+				F8568A831DC00126009EB0D3 /* WeatherHomeScreenView.xib */,
+			);
+			path = AddWeatherAssets;
+			sourceTree = "<group>";
+		};
+		F89BBCD21D9AE05600E9CAF6 /* AddOutfit */ = {
+			isa = PBXGroup;
+			children = (
+				F8F781581DA2E66F00433B44 /* AddOutfitViewController.swift */,
+				E7EB5BD91DB29A520019EBCB /* AddOutfitViewModel.swift */,
+				69C718621DAEA3B0003CD1C7 /* WeatherTypeViewModel.swift */,
+				F89BBCD31D9AE08400E9CAF6 /* AddOutfitStoryboard.storyboard */,
+				F89BBCDB1D9B1E6E00E9CAF6 /* AddOutfitHeaderView.swift */,
+				F8568A771DBE9E63009EB0D3 /* AddOutfitHeaderViewModel.swift */,
+				F89BBCD91D9B1E2500E9CAF6 /* AddOutfitHeaderView.xib */,
+				F83A8BB01D9EBF8600EFF720 /* WeatherTypeView.swift */,
+				F83A8BB21D9EBF9800EFF720 /* WeatherTypeView.xib */,
+			);
+			path = AddOutfit;
+			sourceTree = "<group>";
+		};
+		F8BD70871DA54EA200A7FC9A /* LocationPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C3561DA6E69500A65267 /* PermissionLocationViewController.swift */,
+				F8E0C3571DA6E69500A65267 /* PermissionLocationViewController.xib */,
+				F8C2C2BC1DAD385700F6101E /* LocationService.swift */,
+				F8E0C35A1DA6E88C00A65267 /* PermissionLocation.swift */,
+			);
+			path = LocationPermissions;
+			sourceTree = "<group>";
+		};
+		F8E0C35C1DA6ECF200A65267 /* BlurModalPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C35D1DA6ECF300A65267 /* BlurModalPresentationController.swift */,
+			);
+			path = BlurModalPresentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C054DB61D995A5500FE115A /* ComfyWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C054DD41D995A5500FE115A /* Build configuration list for PBXNativeTarget "ComfyWeather" */;
+			buildPhases = (
+				8E6C33EC1C17C961BDE1187B /* [CP] Check Pods Manifest.lock */,
+				0C054DB31D995A5500FE115A /* Sources */,
+				0C054DB41D995A5500FE115A /* Frameworks */,
+				0C054DB51D995A5500FE115A /* Resources */,
+				BAC2B63A508F2DE56341E38D /* [CP] Embed Pods Frameworks */,
+				17A3A5E3951A5B7AB4C479BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComfyWeather;
+			productName = ComfyWeather;
+			productReference = 0C054DB71D995A5500FE115A /* ComfyWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C054DCA1D995A5500FE115A /* ComfyWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C054DD71D995A5500FE115A /* Build configuration list for PBXNativeTarget "ComfyWeatherTests" */;
+			buildPhases = (
+				6D956FF08DF20BF5B56E1D01 /* [CP] Check Pods Manifest.lock */,
+				0C054DC71D995A5500FE115A /* Sources */,
+				0C054DC81D995A5500FE115A /* Frameworks */,
+				0C054DC91D995A5500FE115A /* Resources */,
+				578248113CE49FCB39F9913A /* [CP] Embed Pods Frameworks */,
+				F237F619ED4E5B78B42DB518 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C054DCD1D995A5500FE115A /* PBXTargetDependency */,
+			);
+			name = ComfyWeatherTests;
+			productName = ComfyWeatherTests;
+			productReference = 0C054DCB1D995A5500FE115A /* ComfyWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C054DAF1D995A5500FE115A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Intrepid Pursuits";
+				TargetAttributes = {
+					0C054DB61D995A5500FE115A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = THP5EV5EJ9;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0C054DCA1D995A5500FE115A = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C054DB61D995A5500FE115A;
+					};
+				};
+			};
+			buildConfigurationList = 0C054DB21D995A5500FE115A /* Build configuration list for PBXProject "ComfyWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C054DAE1D995A5500FE115A;
+			productRefGroup = 0C054DB81D995A5500FE115A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C054DB61D995A5500FE115A /* ComfyWeather */,
+				0C054DCA1D995A5500FE115A /* ComfyWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C054DB51D995A5500FE115A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B1FDD31DA42A84003C3E66 /* HomeScreenController.xib in Resources */,
+				693619DE1DA58ED300D787B5 /* AddPhotoStoryboard.storyboard in Resources */,
+				6914966A1DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.xib in Resources */,
+				E7C38B9B1D9AE52900B2297D /* LoginViewController.xib in Resources */,
+				0C054DE01D995BB700FE115A /* LaunchScreen.xib in Resources */,
+				694611541DB6A6E700ADA336 /* PreviousOutfitsViewController.xib in Resources */,
+				F8E0C3591DA6E69500A65267 /* PermissionLocationViewController.xib in Resources */,
+				E7C38BA61D9B134700B2297D /* Slabo13px-Regular.ttf in Resources */,
+				E791DDF31D9C2F9400E4516E /* Chivo-LightItalic.ttf in Resources */,
+				E791DDF11D9C2F9400E4516E /* Chivo-Italic.ttf in Resources */,
+				E791DDEF1D9C2F9400E4516E /* Chivo-BlackItalic.ttf in Resources */,
+				6959D2D21DB7CEC3000EF4AB /* MockPreviousOutfitsData.json in Resources */,
+				E771CF601D9C2B2700AE6F19 /* Chivo-Bold.ttf in Resources */,
+				E791DDF21D9C2F9400E4516E /* Chivo-Light.ttf in Resources */,
+				F8568A841DC00126009EB0D3 /* WeatherHomeScreenView.xib in Resources */,
+				690BB2421D9F092C00EA3BAE /* DeniedCameraPermissionsViewController.xib in Resources */,
+				E70ABA481DB1569E0059E0D0 /* AddClothingView.xib in Resources */,
+				E7E2973D1DB958FB00E4ED27 /* Assets.xcassets in Resources */,
+				F8568A801DBFF3D3009EB0D3 /* WeatherAddOutfitView.xib in Resources */,
+				E791DDF01D9C2F9400E4516E /* Chivo-BoldItalic.ttf in Resources */,
+				E70ABA461DB1569E0059E0D0 /* AddClothingInputView.xib in Resources */,
+				E76C92D21DA7DB1E002C7655 /* ForecastColumnView.xib in Resources */,
+				E791DDEE1D9C2F9400E4516E /* Chivo-Black.ttf in Resources */,
+				6946114C1DB691CB00ADA336 /* PreviousOutfitTableViewCell.xib in Resources */,
+				F89BBCDA1D9B1E2500E9CAF6 /* AddOutfitHeaderView.xib in Resources */,
+				69B71B971D9C5BC9005CE752 /* SavePhotoViewController.xib in Resources */,
+				69B71B911D9C1013005CE752 /* TakePhotoViewController.xib in Resources */,
+				E70EF80F1DB549F200161E40 /* ClothingItemCell.xib in Resources */,
+				0C054DEC1D995CD600FE115A /* RootViewController.xib in Resources */,
+				F89BBCD41D9AE08400E9CAF6 /* AddOutfitStoryboard.storyboard in Resources */,
+				F83A8BB31D9EBF9800EFF720 /* WeatherTypeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C054DC91D995A5500FE115A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17A3A5E3951A5B7AB4C479BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComfyWeather/Pods-ComfyWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		578248113CE49FCB39F9913A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComfyWeatherTests/Pods-ComfyWeatherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D956FF08DF20BF5B56E1D01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6C33EC1C17C961BDE1187B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC2B63A508F2DE56341E38D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComfyWeather/Pods-ComfyWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F237F619ED4E5B78B42DB518 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComfyWeatherTests/Pods-ComfyWeatherTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C054DB31D995A5500FE115A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77A04C51DBA830700AC1344 /* URL+https.swift in Sources */,
+				F8D39F6F1DAE78AC002750D8 /* DeniedCameraPermissionsViewController.swift in Sources */,
+				F8D39F6E1DAE78A6002750D8 /* OutfitPhotoViewModel.swift in Sources */,
+				E7D6412D1DBFB7DC00C7E79C /* Outfit.swift in Sources */,
+				E7C38BA81D9B179E00B2297D /* LoginViewModel.swift in Sources */,
+				E7BA00761DA559E800376341 /* HomeScreenViewModel.swift in Sources */,
+				E7B1FDDB1DA4350D003C3E66 /* UIView+Subview.swift in Sources */,
+				E7C38B9A1D9AE52900B2297D /* LoginViewController.swift in Sources */,
+				69C718631DAEA3B0003CD1C7 /* WeatherTypeViewModel.swift in Sources */,
+				69AB02821DBEA69B00C2646C /* PreviousOutfitViewModel.swift in Sources */,
+				E7218ED31DB91AC300004F97 /* ClothingCategoryRequest.swift in Sources */,
+				E7D5BF101DB667AA006CE743 /* CommonDateFormatters.swift in Sources */,
+				E70EF8101DB549F200161E40 /* ClothingItemCellViewModel.swift in Sources */,
+				E7EB5BD81DB27DCC0019EBCB /* UICollectionView+RegisterNib.swift in Sources */,
+				E791DDF81D9C514B00E4516E /* BackendRequest.swift in Sources */,
+				E7D5BF0C1DB65B34006CE743 /* Result.swift in Sources */,
+				F89BBCDC1D9B1E6E00E9CAF6 /* AddOutfitHeaderView.swift in Sources */,
+				E7D6412B1DBFADBB00C7E79C /* OutfitCreationRequest.swift in Sources */,
+				E7E297431DB9612200E4ED27 /* LoginRequest.swift in Sources */,
+				691496691DBE72460070CAC6 /* NoPreviousOutfitsTableViewCell.swift in Sources */,
+				0C054DEB1D995CD600FE115A /* RootViewController.swift in Sources */,
+				E7BA00731DA547E500376341 /* Double+Math.swift in Sources */,
+				E7B1FDD21DA42A84003C3E66 /* HomeScreenController.swift in Sources */,
+				E75183E31D9C6C43009BB066 /* User.swift in Sources */,
+				F83A8BB11D9EBF8600EFF720 /* WeatherTypeView.swift in Sources */,
+				F8568A7E1DBFF3AF009EB0D3 /* WeatherAddOutfitView.swift in Sources */,
+				E70EF80E1DB549F200161E40 /* ClothingItemCell.swift in Sources */,
+				E7E2973F1DB95ECD00E4ED27 /* URL+IconURLs.swift in Sources */,
+				E7D641271DBEAB6D00C7E79C /* ArticleOfClothing.swift in Sources */,
+				E70ABA451DB1569E0059E0D0 /* AddClothingInputView.swift in Sources */,
+				F8E0C3581DA6E69500A65267 /* PermissionLocationViewController.swift in Sources */,
+				F8E0C3601DA6F03C00A65267 /* CGRect+Math.swift in Sources */,
+				E7D641251DBEAA5900C7E79C /* ArticleOfClothingCreationRequest.swift in Sources */,
+				E7EB5BD61DB27C8C0019EBCB /* UITableView+RegisterNib.swift in Sources */,
+				F8568A821DC00112009EB0D3 /* WeatherHomeScreenView.swift in Sources */,
+				F8C2C2BD1DAD385700F6101E /* LocationService.swift in Sources */,
+				E747117B1DAAC7E0006FE073 /* ForecastColumnViewModel.swift in Sources */,
+				694611531DB6A6E700ADA336 /* PreviousOutfitsViewController.swift in Sources */,
+				F8F781591DA2E66F00433B44 /* AddOutfitViewController.swift in Sources */,
+				F8F781571DA2DB1700433B44 /* UILabel+Typography.swift in Sources */,
+				E7EB5BDA1DB29A520019EBCB /* AddOutfitViewModel.swift in Sources */,
+				E7C38B9D1D9B071A00B2297D /* UIColor+ComfyWeather.swift in Sources */,
+				E70ABA471DB1569E0059E0D0 /* AddClothingView.swift in Sources */,
+				F8456A411DBDA7150003B558 /* WeatherAssetsViewModel.swift in Sources */,
+				F8568A781DBE9E63009EB0D3 /* AddOutfitHeaderViewModel.swift in Sources */,
+				693619E01DA59B3400D787B5 /* PhotoCollectionViewCell.swift in Sources */,
+				F8E0C35E1DA6ECF300A65267 /* BlurModalPresentationController.swift in Sources */,
+				69BED5F71DAFF94D00E0041F /* Weather.swift in Sources */,
+				E7C38B9F1D9B09EC00B2297D /* UIFont+ComfyWeather.swift in Sources */,
+				69B71B901D9C1013005CE752 /* TakePhotoViewController.swift in Sources */,
+				690BD2E81DB550AB00D08F4B /* FetchWeatherService.swift in Sources */,
+				E7174D461DB802EF004168B8 /* AddClothingInputViewModel.swift in Sources */,
+				6959D2D41DB7E3A0000EF4AB /* ClothingArticle.swift in Sources */,
+				E7875C981DA7E220004191FA /* Bundle+Load.swift in Sources */,
+				6946114B1DB691CB00ADA336 /* PreviousOutfitTableViewCell.swift in Sources */,
+				E76C92D11DA7DB1E002C7655 /* ForecastColumnView.swift in Sources */,
+				691486DB1DBF99CB007B79BB /* PreviousOutfitsRequest.swift in Sources */,
+				F8E0C35B1DA6E88C00A65267 /* PermissionLocation.swift in Sources */,
+				0C054DE81D995C6E00FE115A /* AppDelegate.swift in Sources */,
+				E7D5BF121DB6689E006CE743 /* ClothingCategory.swift in Sources */,
+				69B71B961D9C5BC9005CE752 /* SavePhotoViewController.swift in Sources */,
+				693619C21DA53F4600D787B5 /* UINavigationController+ComfyWeather.swift in Sources */,
+				6946114E1DB694D900ADA336 /* PreviousOutfit.swift in Sources */,
+				694611461DB6857400ADA336 /* PreviousOutfitsViewModel.swift in Sources */,
+				693619CB1DA5526A00D787B5 /* AddPhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C054DC71D995A5500FE115A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E722BD2C1DB441DC00B02951 /* AddOutfitViewModelTests.swift in Sources */,
+				E7D5BF171DB678EC006CE743 /* ClothingCategoryRequestTests.swift in Sources */,
+				E723F3741D9EE08800F26D11 /* LoginRequestTests.swift in Sources */,
+				F8456A431DBDC6E50003B558 /* WeatherAssetsViewModelTests.swift in Sources */,
+				E7D641291DBEB6CB00C7E79C /* ArticleOfClothingCreationRequestTests.swift in Sources */,
+				69BED5F01DAFC36100E0041F /* WeatherTypeViewModelTests.swift in Sources */,
+				690807C71DB9750A0035D794 /* PreviousOutfitsTests.swift in Sources */,
+				F80E2C4E1DB54F8F00FD7976 /* LocationServiceTests.swift in Sources */,
+				690BB23E1D9EB66500EA3BAE /* TakePhotoComfyWeatherTests.swift in Sources */,
+				E791DDF61D9C306800E4516E /* FontTests.swift in Sources */,
+				E7D6412F1DBFF14E00C7E79C /* OutfitCreationRequestTests.swift in Sources */,
+				0C054DD01D995A5500FE115A /* ComfyWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C054DCD1D995A5500FE115A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C054DB61D995A5500FE115A /* ComfyWeather */;
+			targetProxy = 0C054DCC1D995A5500FE115A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C054DD21D995A5500FE115A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C054DD31D995A5500FE115A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C054DD51D995A5500FE115A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240F57F2BD375622D5359898 /* Pods-ComfyWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = THP5EV5EJ9;
+				INFOPLIST_FILE = ComfyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.intrepid.ComfyWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C054DD61D995A5500FE115A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D146F9AAEE2578A9FB2907 /* Pods-ComfyWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = THP5EV5EJ9;
+				INFOPLIST_FILE = ComfyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.intrepid.ComfyWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C054DD81D995A5500FE115A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55CBACB69E6D1362CE52B0C /* Pods-ComfyWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ComfyWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.intrepid.ComfyWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComfyWeather.app/ComfyWeather";
+			};
+			name = Debug;
+		};
+		0C054DD91D995A5500FE115A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B485D0FA55938B40B39EFB /* Pods-ComfyWeatherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ComfyWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.intrepid.ComfyWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComfyWeather.app/ComfyWeather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C054DB21D995A5500FE115A /* Build configuration list for PBXProject "ComfyWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C054DD21D995A5500FE115A /* Debug */,
+				0C054DD31D995A5500FE115A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C054DD41D995A5500FE115A /* Build configuration list for PBXNativeTarget "ComfyWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C054DD51D995A5500FE115A /* Debug */,
+				0C054DD61D995A5500FE115A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C054DD71D995A5500FE115A /* Build configuration list for PBXNativeTarget "ComfyWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C054DD81D995A5500FE115A /* Debug */,
+				0C054DD91D995A5500FE115A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C054DAF1D995A5500FE115A /* Project object */;
+}

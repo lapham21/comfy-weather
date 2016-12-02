@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ComfyWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="FtJ-eV-8Sw" id="9oT-BG-95n"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FKu-VI-cn7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="weatherCloudynightWhite" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-Yi-IcN">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138.40000000000001" id="5Cd-HC-DST"/>
+                        <constraint firstAttribute="height" constant="195" id="5ju-cP-V9T"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="bBC-Lh-Tws">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="JDu-qO-pPB"/>
+                        <constraint firstAttribute="width" constant="286" id="cRE-O3-4Tb"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" image="weatherCloudynightWhiteCopy" translatesAutoresizingMaskIntoConstraints="NO" id="MXa-o7-7uL">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="195" id="EBl-fW-Rrv"/>
+                        <constraint firstAttribute="height" constant="195" id="ive-kC-8F2"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtJ-eV-8Sw">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="265" id="0By-Bv-8cd"/>
+                        <constraint firstAttribute="height" constant="40" id="vSb-l1-mFM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                    <state key="normal" title="LOG IN WITH FACEBOOK" backgroundImage="rectangle2">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginViaFacebookButtonPressed:" destination="-1" eventType="touchUpInside" id="4P2-02-9z7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.60392156862745094" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FtJ-eV-8Sw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0cI-Wd-1he"/>
+                <constraint firstItem="MXa-o7-7uL" firstAttribute="top" secondItem="bBC-Lh-Tws" secondAttribute="bottom" constant="20" id="A1j-gK-yQp"/>
+                <constraint firstItem="bBC-Lh-Tws" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CZb-7E-LKn"/>
+                <constraint firstItem="lgq-Yi-IcN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="POR-oA-cdD"/>
+                <constraint firstItem="bBC-Lh-Tws" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="atO-fy-eqf"/>
+                <constraint firstAttribute="trailing" secondItem="MXa-o7-7uL" secondAttribute="trailing" id="bqw-O3-oCE"/>
+                <constraint firstItem="bBC-Lh-Tws" firstAttribute="top" secondItem="lgq-Yi-IcN" secondAttribute="bottom" id="fIN-cY-2jE"/>
+                <constraint firstAttribute="bottom" secondItem="FtJ-eV-8Sw" secondAttribute="bottom" constant="30" id="rP8-8K-neb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="group" width="99" height="67"/>
+        <image name="rectangle2" width="265" height="40"/>
+        <image name="weatherCloudynightWhite" width="105" height="104"/>
+        <image name="weatherCloudynightWhiteCopy" width="162" height="108"/>
+    </resources>
+</document>

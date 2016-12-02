@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Slabo13px-Regular.ttf">
+            <string>Slabo13px-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddClothingInputView" customModule="ComfyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="va8-Zi-UWC" userLabel="Text Field Container View">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What are you wearing?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-M1-KOn" userLabel="Outfit Label Text Field">
+                            <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Slabo13px-Regular" family="Slabo 13px" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqk-EQ-S1V" userLabel="Submit Button">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Sd9-TI-sw0"/>
+                                <constraint firstAttribute="width" constant="25" id="lAT-6L-Gjc"/>
+                            </constraints>
+                            <state key="normal" image="submitCaret"/>
+                        </button>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFF-bv-dBw" userLabel="Divider">
+                            <color key="backgroundColor" red="0.60392156862745094" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="c31-rp-OQm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iFF-bv-dBw" secondAttribute="trailing" constant="20" id="0h1-gd-Xct"/>
+                        <constraint firstItem="Mqq-M1-KOn" firstAttribute="top" secondItem="va8-Zi-UWC" secondAttribute="top" constant="20" id="5ol-Pz-HbK"/>
+                        <constraint firstAttribute="trailing" secondItem="fqk-EQ-S1V" secondAttribute="trailing" constant="20" id="66h-UJ-xwx"/>
+                        <constraint firstItem="Mqq-M1-KOn" firstAttribute="leading" secondItem="va8-Zi-UWC" secondAttribute="leading" constant="20" id="BLb-Be-Kxs"/>
+                        <constraint firstItem="fqk-EQ-S1V" firstAttribute="top" secondItem="va8-Zi-UWC" secondAttribute="top" constant="15" id="Cfn-1b-Cjf"/>
+                        <constraint firstItem="iFF-bv-dBw" firstAttribute="leading" secondItem="va8-Zi-UWC" secondAttribute="leading" constant="20" id="IjN-S5-apR"/>
+                        <constraint firstItem="fqk-EQ-S1V" firstAttribute="leading" secondItem="Mqq-M1-KOn" secondAttribute="trailing" constant="8" id="f94-cP-SgV"/>
+                        <constraint firstAttribute="bottom" secondItem="iFF-bv-dBw" secondAttribute="bottom" constant="12" id="oFh-XH-6b6"/>
+                        <constraint firstAttribute="height" constant="60" id="rQo-h6-lfJ"/>
+                        <constraint firstItem="iFF-bv-dBw" firstAttribute="top" secondItem="Mqq-M1-KOn" secondAttribute="bottom" constant="11" id="sKg-n0-jkX"/>
+                        <constraint firstItem="iFF-bv-dBw" firstAttribute="top" secondItem="fqk-EQ-S1V" secondAttribute="bottom" constant="7" id="wlL-xq-Bcu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="va8-Zi-UWC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="76R-Ui-bY7"/>
+                <constraint firstItem="va8-Zi-UWC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q8e-8b-0od"/>
+                <constraint firstAttribute="trailing" secondItem="va8-Zi-UWC" secondAttribute="trailing" id="ktf-MW-L7y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="outfitNameTextField" destination="Mqq-M1-KOn" id="jkx-ZD-dQG"/>
+                <outlet property="submitButton" destination="fqk-EQ-S1V" id="umQ-bY-T0F"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="-195.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="submitCaret" width="7" height="12"/>
+    </resources>
+</document>

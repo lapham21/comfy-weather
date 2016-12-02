@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chivo-Bold.ttf">
+            <string>Chivo-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Photo View Controller-->
+        <scene sceneID="iU8-Qr-0pG">
+            <objects>
+                <viewController storyboardIdentifier="AddPhotoView" id="7J9-gs-aGi" customClass="AddPhotoViewController" customModule="ComfyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6gg-Z4-gL4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kja-0U-GZb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NRA-cY-Mg6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0GX-pr-o54">
+                                <subviews>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcW-Ej-qkY">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAKE PHOTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-Pg-Eik">
+                                                <fontDescription key="fontDescription" name="Chivo-Bold" family="Chivo" pointSize="14"/>
+                                                <color key="textColor" red="0.15686274510000001" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectPhotoTakePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="S01-oN-ynk">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="0Ew-2D-TNL"/>
+                                                    <constraint firstAttribute="width" constant="39" id="FSu-Mz-21k"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="IR5-pl-bNY"/>
+                                            <constraint firstItem="S01-oN-ynk" firstAttribute="leading" secondItem="mcW-Ej-qkY" secondAttribute="leading" constant="23" id="Px5-60-0Ym"/>
+                                            <constraint firstItem="S01-oN-ynk" firstAttribute="top" secondItem="mcW-Ej-qkY" secondAttribute="top" id="ilw-2c-vRk"/>
+                                            <constraint firstAttribute="trailing" secondItem="CGZ-Pg-Eik" secondAttribute="trailing" id="rwm-Ou-3xu"/>
+                                            <constraint firstAttribute="height" constant="60" id="s7Z-Tu-vER"/>
+                                            <constraint firstAttribute="trailing" secondItem="S01-oN-ynk" secondAttribute="trailing" constant="23" id="v35-kh-fxA"/>
+                                            <constraint firstItem="CGZ-Pg-Eik" firstAttribute="leading" secondItem="mcW-Ej-qkY" secondAttribute="leading" id="vTM-kV-mQf"/>
+                                            <constraint firstAttribute="bottom" secondItem="CGZ-Pg-Eik" secondAttribute="bottom" id="ynN-Ac-Qx6"/>
+                                            <constraint firstItem="CGZ-Pg-Eik" firstAttribute="top" secondItem="S01-oN-ynk" secondAttribute="bottom" constant="8" id="zbb-TU-sZB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="mcW-Ej-qkY" firstAttribute="centerX" secondItem="0GX-pr-o54" secondAttribute="centerX" id="qyS-bX-Wtg"/>
+                                    <constraint firstItem="mcW-Ej-qkY" firstAttribute="centerY" secondItem="0GX-pr-o54" secondAttribute="centerY" id="ufP-vc-SBh"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vrQ-Tf-Rpk" appends="YES" id="Ydk-Cq-DL6"/>
+                                </connections>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-X3-77s">
+                                <color key="backgroundColor" red="0.93415319919999995" green="0.89341431859999998" blue="0.92618763449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="r1v-Yh-nIl">
+                                    <size key="itemSize" width="113" height="113"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Photo Cell" id="vgs-kI-XMa" customClass="PhotoCollectionViewCell" customModule="ComfyWeather" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="1" width="113" height="113"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OVQ-vr-7l0"/>
+                                                <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-Ve-5W6">
+                                                    <subviews>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="otc-sW-8gU"/>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="otc-sW-8gU" firstAttribute="centerX" secondItem="2ei-Ve-5W6" secondAttribute="centerX" id="dQy-c9-413"/>
+                                                        <constraint firstItem="otc-sW-8gU" firstAttribute="centerY" secondItem="2ei-Ve-5W6" secondAttribute="centerY" id="vaG-c3-b80"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="2ei-Ve-5W6" firstAttribute="leading" secondItem="vgs-kI-XMa" secondAttribute="leading" id="3aR-28-nlp"/>
+                                            <constraint firstItem="OVQ-vr-7l0" firstAttribute="top" secondItem="vgs-kI-XMa" secondAttribute="top" id="IgE-De-1Qg"/>
+                                            <constraint firstAttribute="trailing" secondItem="OVQ-vr-7l0" secondAttribute="trailing" id="LxT-Fq-zF3"/>
+                                            <constraint firstItem="OVQ-vr-7l0" firstAttribute="leading" secondItem="vgs-kI-XMa" secondAttribute="leading" id="UCf-jL-QrA"/>
+                                            <constraint firstAttribute="bottom" secondItem="2ei-Ve-5W6" secondAttribute="bottom" id="UGl-gg-Z36"/>
+                                            <constraint firstAttribute="bottom" secondItem="OVQ-vr-7l0" secondAttribute="bottom" id="VDU-z7-6hU"/>
+                                            <constraint firstItem="2ei-Ve-5W6" firstAttribute="top" secondItem="vgs-kI-XMa" secondAttribute="top" id="Zfg-4u-ewb"/>
+                                            <constraint firstAttribute="trailing" secondItem="2ei-Ve-5W6" secondAttribute="trailing" id="vi3-Rb-8VX"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="activityView" destination="2ei-Ve-5W6" id="6iu-Rv-xb6"/>
+                                            <outlet property="imageView" destination="OVQ-vr-7l0" id="7Eu-7n-T41"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="7J9-gs-aGi" id="HNA-vm-yUT"/>
+                                    <outlet property="delegate" destination="7J9-gs-aGi" id="hWc-gU-cjb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93415319919999995" green="0.89341431859999998" blue="0.92618763449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Agm-X3-77s" firstAttribute="leading" secondItem="NRA-cY-Mg6" secondAttribute="leading" id="5Dg-GD-mZg"/>
+                            <constraint firstAttribute="trailing" secondItem="Agm-X3-77s" secondAttribute="trailing" id="94W-JC-B79"/>
+                            <constraint firstItem="Agm-X3-77s" firstAttribute="top" secondItem="0GX-pr-o54" secondAttribute="bottom" constant="-1.5" id="Bqw-vp-xTb"/>
+                            <constraint firstItem="Kja-0U-GZb" firstAttribute="top" secondItem="Agm-X3-77s" secondAttribute="bottom" id="FY5-OD-mx7"/>
+                            <constraint firstItem="0GX-pr-o54" firstAttribute="leading" secondItem="NRA-cY-Mg6" secondAttribute="leading" id="VzY-Ti-gxv"/>
+                            <constraint firstAttribute="trailing" secondItem="0GX-pr-o54" secondAttribute="trailing" id="bQ1-mf-KvB"/>
+                            <constraint firstItem="0GX-pr-o54" firstAttribute="top" secondItem="6gg-Z4-gL4" secondAttribute="bottom" constant="8" id="g8v-1J-By2"/>
+                            <constraint firstItem="Agm-X3-77s" firstAttribute="height" secondItem="NRA-cY-Mg6" secondAttribute="height" multiplier="0.5" id="jlI-Zg-bb5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Agm-X3-77s" id="1LQ-ej-BPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnp-8c-8GC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vrQ-Tf-Rpk">
+                    <connections>
+                        <action selector="takePhotoButtonPressed:" destination="7J9-gs-aGi" id="txC-t5-JDN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-2327.1999999999998" y="-346.77661169415296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selectPhotoTakePhoto" width="39" height="35"/>
+    </resources>
+</document>

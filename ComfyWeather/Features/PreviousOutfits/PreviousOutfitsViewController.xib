@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreviousOutfitsViewController" customModule="ComfyWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="9QQ-Xd-g05" id="O31-Gv-a7z"/>
+                <outlet property="tableView" destination="1V9-7a-GKx" id="IWV-aG-3OV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1V9-7a-GKx">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WcD-Wb-eWc"/>
+                        <outlet property="delegate" destination="-1" id="Kvm-Ke-KWZ"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9QQ-Xd-g05">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="B0q-tc-P8K"/>
+                        <constraint firstAttribute="height" constant="40" id="pOA-fp-EKd"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9QQ-Xd-g05" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AFq-Tj-aUd"/>
+                <constraint firstAttribute="bottom" secondItem="1V9-7a-GKx" secondAttribute="bottom" id="MIi-3X-ozy"/>
+                <constraint firstAttribute="trailing" secondItem="1V9-7a-GKx" secondAttribute="trailing" constant="10" id="UBF-R4-zFf"/>
+                <constraint firstItem="1V9-7a-GKx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VtM-jN-0fE"/>
+                <constraint firstItem="9QQ-Xd-g05" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZYB-Ly-U3y"/>
+                <constraint firstItem="1V9-7a-GKx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xoq-HK-1GJ"/>
+            </constraints>
+            <point key="canvasLocation" x="274" y="-91"/>
+        </view>
+    </objects>
+</document>

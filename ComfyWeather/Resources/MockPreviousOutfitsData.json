@@ -1,0 +1,143 @@
+{
+    "outfits": [
+                {
+                "id": "914fde2d-0509-448a-8079-02d601f4ef62",
+                "updated_at": "2016-10-14T14:43:02Z",
+                "created_at": "2016-10-14T14:43:02Z",
+                "latitude": "42.36",
+                "longitude": "-71.06",
+                "notes": "Was a little cold in the morning, but very comfortable in the afternoon",
+                "is_public": null,
+                "photo_url": "https://s-media-cache-ak0.pinimg.com/236x/f0/f4/fe/f0f4feecae3200a018c068290124f86d.jpg",
+                "latest_rating": "comfy",
+                "weather": {
+                "summary": "Clear",
+                "icon": "clear-day",
+                "precipProbability": 0,
+                "temperature": 57.7,
+                "apparentTemperature": 57.7
+                },
+                "article_of_clothings": [
+                                         {
+                                         "id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f",
+                                         "updated_at": "2016-10-20T16:38:04Z",
+                                         "created_at": "2016-10-20T16:38:04Z",
+                                         "description": "bright yellow rain coat",
+                                         "frequency": 12,
+                                         "category_name": "Coat",
+                                         "category_id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f"
+                                         },
+                                         {
+                                         "id": "33b73a46-891d-409b-a814-ee7ddb65977c",
+                                         "updated_at": "2016-10-06T15:39:51Z",
+                                         "created_at": "2016-10-06T15:39:51Z",
+                                         "description": "green t-shirt",
+                                         "frequency": 15,
+                                         "category_name": "t-shirt",
+                                         "category_id": "6f09d0e8-0234-4aa0-81a4-ca2b41b1fcda"
+                                         },
+                                         {
+                                         "id": "780ee318-1fc6-4e16-b168-ac1b910d394c",
+                                         "updated_at": "2016-10-20T16:36:03Z",
+                                         "created_at": "2016-10-20T16:36:03Z",
+                                         "description": "blue jeans",
+                                         "frequency": 11,
+                                         "category_name": "Pants",
+                                         "category_id": "a00f5194-7414-478b-ab94-71cfda54436a"
+                                         },
+                                         {
+                                         "id": "9b1f4328-554f-4259-af79-14cb873c0178",
+                                         "updated_at": "2016-10-20T16:17:17Z",
+                                         "created_at": "2016-10-20T16:17:17Z",
+                                         "description": "a blue item",
+                                         "frequency": 10,
+                                         "category_name": "Mittens",
+                                         "category_id": "964d4be1-da02-4217-a2d3-210009ff61ba"
+                                         },
+                                         {
+                                         "id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f",
+                                         "updated_at": "2016-10-20T16:38:04Z",
+                                         "created_at": "2016-10-20T16:38:04Z",
+                                         "description": "bright yellow rain coat",
+                                         "frequency": 12,
+                                         "category_name": "Coat",
+                                         "category_id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f"
+                                         },
+                                         {
+                                         "id": "33b73a46-891d-409b-a814-ee7ddb65977c",
+                                         "updated_at": "2016-10-06T15:39:51Z",
+                                         "created_at": "2016-10-06T15:39:51Z",
+                                         "description": "green t-shirt",
+                                         "frequency": 15,
+                                         "category_name": "t-shirt",
+                                         "category_id": "6f09d0e8-0234-4aa0-81a4-ca2b41b1fcda"
+                                         },
+                                         {
+                                         "id": "780ee318-1fc6-4e16-b168-ac1b910d394c",
+                                         "updated_at": "2016-10-20T16:36:03Z",
+                                         "created_at": "2016-10-20T16:36:03Z",
+                                         "description": "blue jeans",
+                                         "frequency": 11,
+                                         "category_name": "Pants",
+                                         "category_id": "a00f5194-7414-478b-ab94-71cfda54436a"
+                                         },
+                                         {
+                                         "id": "9b1f4328-554f-4259-af79-14cb873c0178",
+                                         "updated_at": "2016-10-20T16:17:17Z",
+                                         "created_at": "2016-10-20T16:17:17Z",
+                                         "description": "a blue item",
+                                         "frequency": 10,
+                                         "category_name": "Mittens",
+                                         "category_id": "964d4be1-da02-4217-a2d3-210009ff61ba"
+                                         }
+                                         ]
+                },
+                {
+                "id": "b022a286-9f31-4815-bbf4-85171c37a90d",
+                "updated_at": "2016-10-14T14:45:55Z",
+                "created_at": "2016-10-14T14:45:55Z",
+                "latitude": "42.0",
+                "longitude": "-70.0",
+                "notes": "Was wicked comfortable all day. Great outfit for this weather",
+                "is_public": null,
+                "photo_url": "http://www.refinedguy.com/wp-content/uploads/2013/10/j-crew-garrison-jacket-mens-jackets-fall-2013.png",
+                "latest_rating": "comfy",
+                "weather": {
+                "summary": "Clear",
+                "icon": "clear-day",
+                "precipProbability": 0,
+                "temperature": 54.64,
+                "apparentTemperature": 54.64
+                },
+                "article_of_clothings": [
+                                         {
+                                         "id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f",
+                                         "updated_at": "2016-10-20T16:38:04Z",
+                                         "created_at": "2016-10-20T16:38:04Z",
+                                         "description": "bright yellow rain coat",
+                                         "frequency": 12,
+                                         "category_name": "Coat",
+                                         "category_id": "58eb2a5d-bcd7-462e-b0ef-03f89119053f"
+                                         },
+                                         {
+                                         "id": "33b73a46-891d-409b-a814-ee7ddb65977c",
+                                         "updated_at": "2016-10-06T15:39:51Z",
+                                         "created_at": "2016-10-06T15:39:51Z",
+                                         "description": "green t-shirt",
+                                         "frequency": 15,
+                                         "category_name": "t-shirt",
+                                         "category_id": "6f09d0e8-0234-4aa0-81a4-ca2b41b1fcda"
+                                         },
+                                         {
+                                         "id": "780ee318-1fc6-4e16-b168-ac1b910d394c",
+                                         "updated_at": "2016-10-20T16:36:03Z",
+                                         "created_at": "2016-10-20T16:36:03Z",
+                                         "description": "blue jeans",
+                                         "frequency": 11,
+                                         "category_name": "Pants",
+                                         "category_id": "a00f5194-7414-478b-ab94-71cfda54436a"
+                                         }
+                                         ]
+                }
+                ]
+}

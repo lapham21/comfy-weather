@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Slabo13px-Regular.ttf">
+            <string>Slabo13px-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="707" id="ESM-d0-n6z" customClass="NoPreviousOutfitsTableViewCell" customModule="ComfyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ESM-d0-n6z" id="3fL-Me-bGc">
+                <frame key="frameInset" width="375" height="666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69X-Jz-VkK">
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" image="weatherCloudynightWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-HQ-wYy"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" image="weatherCloudynightWhiteCopy" translatesAutoresizingMaskIntoConstraints="NO" id="ETi-i1-Jo9"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have not logged any comfy outfits for 60-70° sunny days." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-zz-EoZ">
+                                <fontDescription key="fontDescription" name="Slabo13px-Regular" family="Slabo 13px" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noPreviousOutfitsTank" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-wh-XHV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2l4-er-hSq"/>
+                                    <constraint firstAttribute="width" constant="45" id="PC8-JH-3ys"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60392156860000001" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ETi-i1-Jo9" firstAttribute="top" secondItem="gk2-zz-EoZ" secondAttribute="bottom" id="9F6-yn-1mt"/>
+                            <constraint firstItem="fXz-HQ-wYy" firstAttribute="width" secondItem="69X-Jz-VkK" secondAttribute="width" multiplier="0.39" id="IPu-Dh-qVE"/>
+                            <constraint firstAttribute="trailing" secondItem="ETi-i1-Jo9" secondAttribute="trailing" id="MgA-hY-rXf"/>
+                            <constraint firstItem="ETi-i1-Jo9" firstAttribute="width" secondItem="69X-Jz-VkK" secondAttribute="width" multiplier="0.52" id="RcQ-H2-NJA"/>
+                            <constraint firstItem="gk2-zz-EoZ" firstAttribute="top" secondItem="fXz-HQ-wYy" secondAttribute="bottom" constant="23" id="SW0-AM-hfI"/>
+                            <constraint firstItem="gk2-zz-EoZ" firstAttribute="centerY" secondItem="69X-Jz-VkK" secondAttribute="centerY" id="Viw-BP-Akq"/>
+                            <constraint firstItem="fXz-HQ-wYy" firstAttribute="leading" secondItem="69X-Jz-VkK" secondAttribute="leading" id="Wsg-FR-ci7"/>
+                            <constraint firstItem="gk2-zz-EoZ" firstAttribute="width" secondItem="69X-Jz-VkK" secondAttribute="width" multiplier="0.81" id="ZfT-LF-Cvw"/>
+                            <constraint firstItem="gk2-zz-EoZ" firstAttribute="centerX" secondItem="69X-Jz-VkK" secondAttribute="centerX" id="iuj-kk-TZz"/>
+                            <constraint firstItem="gk2-zz-EoZ" firstAttribute="top" secondItem="eoT-wh-XHV" secondAttribute="bottom" constant="47" id="m36-Wj-LhV"/>
+                            <constraint firstItem="ETi-i1-Jo9" firstAttribute="height" secondItem="69X-Jz-VkK" secondAttribute="height" multiplier="0.36" id="rYl-my-6XR"/>
+                            <constraint firstItem="fXz-HQ-wYy" firstAttribute="height" secondItem="69X-Jz-VkK" secondAttribute="height" multiplier="0.36" id="z1P-gi-H1w"/>
+                            <constraint firstItem="eoT-wh-XHV" firstAttribute="centerX" secondItem="69X-Jz-VkK" secondAttribute="centerX" id="zrX-DD-wwV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.60392156862745094" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="69X-Jz-VkK" firstAttribute="leading" secondItem="3fL-Me-bGc" secondAttribute="leading" id="2dn-80-6Al"/>
+                    <constraint firstItem="69X-Jz-VkK" firstAttribute="top" secondItem="3fL-Me-bGc" secondAttribute="top" id="7cc-DE-dpd"/>
+                    <constraint firstAttribute="trailing" secondItem="69X-Jz-VkK" secondAttribute="trailing" id="GKD-VB-b5r"/>
+                    <constraint firstAttribute="bottom" secondItem="69X-Jz-VkK" secondAttribute="bottom" id="gKg-zT-GAa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noPreviousOutfitsLabel" destination="gk2-zz-EoZ" id="1j4-UG-ff4"/>
+            </connections>
+            <point key="canvasLocation" x="-178" y="-110"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noPreviousOutfitsTank" width="30" height="36"/>
+        <image name="weatherCloudynightWhite" width="105" height="104"/>
+        <image name="weatherCloudynightWhiteCopy" width="162" height="108"/>
+    </resources>
+</document>
